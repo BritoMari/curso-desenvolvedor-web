@@ -15,7 +15,6 @@ Este é um repositório para guardar minhas anotações do curso de Desenvolvedo
  - Estrutura e Semântica
 
 ### *Curso 2*: CSS 3 Fundamental
- - CSS 3 Fundamental
  - Fundamentos CSS
  - Conceitos Básicos
  - Fontes
