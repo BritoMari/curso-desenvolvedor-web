@@ -24,3 +24,23 @@ Este é um repositório para guardar minhas anotações do curso de Desenvolvedo
  - Page Layouts - Layout Fixo
  - Page Layouts - Layout Adaptivo
  - Lista Mania
+
+ ### *Curso 3*: Curso de Javascript
+ - Apresentação da Linguagem Javascrit
+ - Princípios Básicos
+ - Funções
+ - Array
+ - Números
+ - Strings
+ - Date
+ - Object
+
+ ### *Curso 4*: Curso jQuery Essencial
+ - Introdução ao jQuery
+ - Fundamentos de jQuery
+ - Além do básico
+ - Scrolling Conteúdo
+ - Eventos
+ - Animações e Efeitos
+
+ 
