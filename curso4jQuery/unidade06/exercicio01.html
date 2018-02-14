@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt-BR">
     <head>
@@ -6,7 +7,21 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-					
+			$(function(e) {
+
+                $('#cursohtml').click( function(e) {
+                    alert("clicou no botao html");
+                });
+
+            
+                function mostrarMensagem() {
+                    alert("clicou no botao css");
+                    $('#cursocss').unbind("click", mostrarMensagem);
+                };
+
+                $('#cursocss').bind("click", mostrarMensagem);
+
+            })		
 		</script>        
     </head>
 
