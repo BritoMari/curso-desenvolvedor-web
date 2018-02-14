@@ -25,13 +25,42 @@
 			
 			nav li:first-child 	{ background-image:url(imagem/futebol.png) } 
 			nav li:nth-child(2) { background-image:url(imagem/basquete.png) }
+			nav li:nth-child(3) { background-image:url(imagem/tenis.png) }
+
+			#primeira { width: 100%; height: 100px; background-color: aquamarine}
+			#segunda { width: 100%; height: 100px; background-color: blueviolet}
+			#terceira { width: 100%; height: 100px; background-color: brown}
 					
         </style>
          
         <script src="jquery-3.2.1.min.js"></script>
         <script>		
-			$( function(e) { 	
+			$( function(e) { 
+				
+				function redimensionar() {
+					var alturajanela = $(window).height();
+					$('#primeira').css('height',alturajanela);
+					$('#segunda').css('height',alturajanela);
+					$('#terceira').css('height',alturajanela);
+				}
 
+				$('nav li:nth-child(1)').click( function(e) {
+					$('html,body').animate( {scrollTop:$('#primeira').offset().top}, 1000);
+				})
+				
+				$('nav li:nth-child(2)').click( function(e) {
+					$('html,body').animate( {scrollTop:$('#segunda').offset().top}, 1000);
+				})
+
+				$('nav li:nth-child(3)').click( function(e) {
+					$('html,body').animate( {scrollTop:$('#terceira').offset().top}, 1000);
+				})
+
+				$(window).resize(function(e) {
+					redimensionar();
+				})
+
+				redimensionar();
 			});			
 		</script>   
     </head>
@@ -39,8 +68,13 @@
 		<nav>
         	<ul>
             	<li id="tela1"></li>
-            	<li id="tela2"></li>
+				<li id="tela2"></li>
+				<li id="tela3"></li>
             </ul>
-        </nav>
+		</nav>
+		
+		<div id="primeira"></div>
+		<div id="segunda"></div>
+		<div id="terceira"></div>
     </body>
 </html>
